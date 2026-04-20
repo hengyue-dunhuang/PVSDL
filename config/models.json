@@ -1,0 +1,77 @@
+{
+  "models": [
+    {
+      "id": "gemini-3-flash",
+      "name": "google/gemini-3-flash-preview",
+      "provider": "Google",
+      "supports_vision": true,
+      "supports_reasoning": true,
+      "description": "gemini-3-flash-preview - Google's fast multimodal model"
+    },
+    {
+      "id": "gemini-3.1-pro",
+      "name": "google/gemini-3.1-pro-preview",
+      "provider": "Google",
+      "supports_vision": true,
+      "supports_reasoning": true,
+      "description": "gemini-3-pro-preview - Google's powerful multimodal model"
+    },
+    {
+      "id": "kimi-k2.5",
+      "name": "moonshotai/kimi-k2.5",
+      "provider": "Moonshot",
+      "supports_vision": true,
+      "supports_reasoning": true,
+      "description": "Kimi K2.5 - Moonshot's reasoning model"
+    },
+    {
+      "id": "grok-4.1-fast",
+      "name": "x-ai/grok-4.1-fast",
+      "provider": "xAI",
+      "supports_vision": true,
+      "supports_reasoning": true,
+      "description": "grok-4.1-fast - xAI's fast model"
+    },
+    {
+      "id": "claude-sonnet-4.5",
+      "name": "anthropic/claude-sonnet-4.5",
+      "provider": "Anthropic",
+      "supports_vision": true,
+      "supports_reasoning": false,
+      "description": "claude-sonnet-4.5 - Anthropic's advanced model"
+    },
+    {
+      "id": "gpt-4o-mini",
+      "name": "openai/gpt-4o-mini",
+      "provider": "OpenAI",
+      "supports_vision": true,
+      "supports_reasoning": false,
+      "description": "gpt-4o-mini - OpenAI's cost-effective vision model"
+    },
+    {
+      "id": "gpt-5.2",
+      "name": "openai/gpt-5.2",
+      "provider": "OpenAI",
+      "supports_vision": true,
+      "supports_reasoning": false,
+      "description": "gpt-5.2 - OpenAI's latest model"
+    },
+    {
+      "id": "qwen3-vl-235b",
+      "name": "qwen/qwen3-vl-235b-a22b-instruct",
+      "provider": "Alibaba",
+      "supports_vision": true,
+      "supports_reasoning": false,
+      "description": "qwen3-vl-235b - Alibaba's vision language model"
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "name": "google/gemini-2.5-flash",
+      "provider": "Alibaba",
+      "supports_vision": true,
+      "supports_reasoning": false,
+      "description": "qwen3-vl-235b - Alibaba's vision language model"
+    }
+  ],
+  "default_models": ["gpt-4o-mini"]
+}
