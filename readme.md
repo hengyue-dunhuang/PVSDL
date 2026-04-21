@@ -3,6 +3,9 @@
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-blue)](https://huggingface.co/datasets/asdmd/PVSDL_DATASET)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-green)](https://www.python.org/)
 
+> [!IMPORTANT]
+> **📢 Dataset Access:** Our work's dataset is officially hosted on Hugging Face: [**asdmd/PVSDL_DATASET · Datasets at Hugging Face**](https://huggingface.co/datasets/asdmd/PVSDL_DATASET)
+
 ## Overview
 
 The **PV Soiling Detection with LLMs (PVSDL) framework** is an automated benchmarking framework designed to evaluate the performance of state-of-the-art **Vision-Language Models (VLMs)** in identifying soiling and dust accumulation on solar panels. 
