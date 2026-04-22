@@ -16,6 +16,7 @@ Efficient Operation and Maintenance (O&M) of photovoltaic systems is critical fo
 
 * **Multi-Model Benchmarking**: Integrated with the OpenRouter API to support seamless switching between various proprietary and open-source VLMs.
 * **Prompt Engineering Suite**: Supports comparative analysis of different prompt templates (`basic`, `detailed`, `cot`, and `technical`) to evaluate instruction-following capabilities.
+* **Baseline Reproduction**: Provides a dedicated `baseline` module containing scripts to train and evaluate traditional computer vision models, allowing for direct performance comparison against VLMs.
 * **Statistical Robustness**: Includes a **Repeated Test Mode** specifically designed for scientific validation, generating variance and distribution data (ideal for Violin Plots or Box Plots).
 * **Automated Metrics**: Built-in calculation of binary classification metrics: True Positive (TP), True Negative (TN), False Positive (FP), and False Negative (FN).
 * **Data Integrity**: Real-time CSV logging and raw JSON response storage for full reproducibility of experimental results.
@@ -90,6 +91,14 @@ python main.py --repeat-test \
     --samples 20
 ```
 
+### 4. Baseline Reproduction (baseline/)
+To evaluate traditional supervised computer vision models as a baseline against the VLM results, use the dedicated scripts in the baseline directory.
+```bash
+# Run the baseline training script
+python baseline/train_all.py --data_dir PVSDL_DATASET/test
+```
+(Note: Replace PVSDL_DATASET/test with your actual dataset path if it is located elsewhere).
+
 ### Arguments Summary
 
 | Argument | Description | Default |
@@ -110,6 +119,8 @@ python main.py --repeat-test \
 Results are stored in two formats:
 1.  **Metric Summary**: `vlm_experiment_results.csv` contains the classification counts and timestamps for every run.
 2.  **Raw Evidence**: `results/raw_predictions/` contains the full JSON responses from the VLMs, allowing for qualitative analysis of model reasoning.
+
+## 
 
 ## Citation
 If you use this framework or dataset in your research, please cite our work:
