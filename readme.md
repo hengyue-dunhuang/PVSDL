@@ -10,7 +10,7 @@
 
 The **PV Soiling Detection with LLMs (PVSDL) framework** is an automated benchmarking framework designed to evaluate the performance of state-of-the-art **Vision-Language Models (VLMs)** in identifying soiling and dust accumulation on solar panels. 
 
-Efficient Operation and Maintenance (O&M) of photovoltaic systems is critical for energy yield. This tool allows researchers to systematically test various VLMs (currently supported: `gemini-3-flash`, `gemini-3.1-pro`, `kimi-k2.5`, `grok-4.1-fast`, `gpt-4o-mini`, and `gemini-2.5-flash`) using different prompt engineering strategies to determine their diagnostic accuracy and reliability in real-world scenarios.
+Efficient Operation and Maintenance (O&M) of photovoltaic systems is critical for energy yield. This tool allows researchers to systematically test various VLMs (currently supported: `gemini-3-flash`, `gemini-3-pro`, `kimi-k2.5`, `grok-4.1-fast`, `gpt-4o-mini`, and `gemini-2.5-flash`) using different prompt engineering strategies to determine their diagnostic accuracy and reliability in real-world scenarios.
 
 ## Key Features
 
@@ -97,7 +97,7 @@ python main.py --repeat-test \
 | `--test` | Execute multi-model/multi-prompt matrix test. | - |
 | `--repeat-test`| Execute repeated runs for statistical analysis. | - |
 | `--images-dir` | Path to the image dataset directory. | `PVSDL_DATASET/test` |
-| `--models` | Comma-separated VLM IDs for benchmarking (e.g., `gemini-3.1-pro`, `grok-4.1-fast`). | From config |
+| `--models` | Comma-separated VLM IDs for benchmarking (e.g., `gemini-3-pro`, `grok-4.1-fast`). | From config |
 | `--prompts` | Comma-separated Prompt IDs (Supported: `basic`, `detailed`, `cot`, `technical`). | `basic` |
 | `--repeat` | Number of iterations for repeated tests. | 50 |
 | `--samples` | Number of images to sample per run. | 10 |
